@@ -31,8 +31,10 @@ when training a model using DP-SDG,
 The second notebook Visualization.ipynb, walks through differential privacy, and demonstrate 
 
 ## Instructions
-- Make sure you have all the dependencies listed in `requirements.txt` installed using `pip`
-- Start tensorboard using the command:
+- Make sure you have all the dependencies listed in `requirements.txt` installed using `pip`. 
+        pip install -r requirements.txt 
+    should install appropriate dependencies.
+- Start tensorboard by running the following command in the project's root directory:
         tensorboard --logdir=./runs
 - TensorBoard should now be accessible at:
         http://localhost:6006
