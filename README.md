@@ -24,11 +24,11 @@ This repo contains two main components spread across two Jupyter Notebooks, and 
 some utility functionality for the notebooks. 
 
 ## Performance Constraints Training with Differential Privacy
-One notebook NOTEBOOK NAME HERE explores the performance concerns that arise
+One notebook Mileston4.ipynb explores the performance concerns that arise
 when training a model using DP-SDG, 
 
 ## Model Output Examination, Privacy Guarantee
-The second notebook NOTEBOOK NAME HERE, walks through differential privacy, and demonstrate 
+The second notebook Visualization.ipynb, walks through differential privacy, and demonstrate 
 
 ## Instructions
 - Make sure you have all the dependencies listed in `requirements.txt` installed using `pip`
@@ -40,7 +40,7 @@ The second notebook NOTEBOOK NAME HERE, walks through differential privacy, and 
 - Once you have started tensorboard, you can use the accompanying notebook to examine the model's
 training progress, and model visualizations.
 - You will need to start a jupyter notebook server in the project root directory using:
-        jupyter notebook
+        `jupyter notebook`
 - This will start a jupyter notebook session you can access at:
         http://localhost:8888
 - The two notebooks are named as follows:
