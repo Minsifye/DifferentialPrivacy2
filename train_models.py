@@ -128,7 +128,6 @@ def train_model(net,trainloader,trainset,device,dp):
 def get_trained_model(dataset,dp):
     classes, trainloader, testloader, trainset, testset = get_test_train_loaders(dataset)
     device = torch.device("cuda")
-    
     net = torchvision.models.alexnet(num_classes=len(classes)).to(device)
 
     if dp:
@@ -143,7 +142,10 @@ def get_trained_model(dataset,dp):
         PATH = './trained_models/' + dataset + '_dp' + '.pth'
     else:
         PATH = './trained_models/' + dataset + '.pth'
-    net.load_state_dict(torch.load(PATH+"",map_location=torch.device('cuda')))
+    # PATH='./trained_models/mnist_0_931.pth'
+    # PATH='./trained_models/mnist_0_dp_316.pth'
+    print(len(classes))
+    net.load_state_dict(torch.load(PATH+"",map_location=torch.device('cpu')))
     return net,classes,trainloader,testloader,trainset,testset
 
 def get_test_train_loaders(dataset):
